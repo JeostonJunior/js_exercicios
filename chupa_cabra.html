@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADAR</title>
+
+  <style>
+    #res{
+      font: normal 12pt arial, helvetica, sans-serif;
+      margin-top: 20px;
+    }
+    .btn{
+      margin-left: 10px;
+      width:70px
+    }
+
+
+
+    
+  </style>
+
+
+</head>
+<body>
+  <h1>RADAR</h1>
+  <input type="number" name="velocidade" id="velocidade">
+  <input type="button" value="Verificar" onclick="calcular()" class="btn">
+
+  <div id="res">
+    <p>VOCÊ PASSOU EM UM RADAR</p>
+
+  </div>
+
+  <script>
+      function calcular() {
+        var velocidade = document.getElementById("velocidade")
+        var vel = Number(velocidade.value)
+
+        res.innerHTML = `A sua velocidade é <strong>${vel} Km/h</strong>`
+
+        if (vel > 80){
+          res.innerHTML +=` - Você foi <strong>Multado</strong>`
+        }else{
+          res.innerHTML +=` - Use cinto de segurança!`
+        }
+          
+
+      }
+
+
+  </script>
+  
+</body>
+</html>
