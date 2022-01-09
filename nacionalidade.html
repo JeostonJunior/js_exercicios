@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nacionalidade</title>
 
     <style>
-        body {
-            background-color: rgb(15, 28, 150);
-        }
+      body {
+        background-color: rgb(15, 28, 150);
+      }
 
-        h1 {
-            color: rgb(10, 191, 16);
-        }
+      h1 {
+        color: rgb(10, 191, 16);
+      }
 
-        #nacionalidade {
-            margin-top: 20px;
-            color: rgb(10, 191, 16);
-            font-size: 20px;
-        }
+      #nacionalidade {
+        margin-top: 20px;
+        color: rgb(10, 191, 16);
+        font-size: 20px;
+      }
 
-        .btn {
-            margin-left: 15px;
-            color: rgb(10, 191, 16);
-            background-color: black;
-        }
+      .btn {
+        margin-left: 15px;
+        color: rgb(10, 191, 16);
+        background-color: black;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <h1>Nacionalidade</h1>
-    <input type="text" name="nacionalidade" id="pais">
-    <input type="button" value="Verificar" onclick="verificar()" class='btn'>
+    <input type="text" name="nacionalidade" id="pais" />
+    <input type="button" value="Verificar" onclick="verificar()" class="btn" />
 
-    <div id="nacionalidade">
-        Qual a sua nacionalidade?
-    </div>
+    <div id="nacionalidade">Qual a sua nacionalidade?</div>
 
     <script>
-        function verificar() {
-            var pais = document.getElementById("pais")
-            var naturalidade = String(pais.value.toLowerCase())
+      function verificar() {
+        var pais = document.getElementById("pais");
+        var naturalidade = String(pais.value.toLowerCase());
 
-            nacionalidade.innerHTML = `Seu país é <strong>${naturalidade[0].toUpperCase() + naturalidade.slice(1)}</strong>`
+        nacionalidade.innerHTML = `Seu país é <strong>${
+          naturalidade[0].toUpperCase() + naturalidade.slice(1)
+        }</strong>`;
 
-            if (naturalidade == 'brasil') {
-                nacionalidade.innerHTML += " - Você é Brasileiro!"
-            } else {
-                nacionalidade.innerHTML += " - Vocé é um Forasteiro!"
-            }
+        if (naturalidade == "brasil") {
+          nacionalidade.innerHTML += " - Você é Brasileiro!";
+        } else {
+          nacionalidade.innerHTML += " - Vocé é um Forasteiro!";
         }
-
-
-
-
-
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
