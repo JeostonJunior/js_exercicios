@@ -1,0 +1,44 @@
+body {
+  background: rgb(67, 67, 228);
+  font: normal 15pt Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.638);
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 350px;
+  margin-right: auto;
+  border-radius:  50%;
+}
+
+#saudar{
+  text-align: center;
+}
+
+
+#msg{
+  text-align: center;
+  display: inline;
+}
+
