@@ -9,14 +9,17 @@ if (hora < 12) {
   saudar.innerHTML = "Bom Dia!";
   img.src =
     "https://www.fotografemelhor.com.br/site/wp-content/uploads/2021/06/N%C3%A9voa-Amanhecer-Piraquara015Daniel-Castellano-9aee3c9b.jpg";
+  document.body.style.background = "#e2cd9f";
 } else if (hora <= 18) {
   saudar.innerHTML = "Boa tarde!";
   img.src =
     "https://cdn.falauniversidades.com.br/wp-content/uploads/2020/06/18114924/Fim-de-tarde.jpg";
+  document.body.style.background = "#b9846f";
 } else {
   saudar.innerHTML = "Boa noite!";
   img.src =
     "https://www.teusonhar.com.br/wp-content/uploads/2015/03/sonhar-com-noite.jpg";
+  document.body.style.background = "#515154";
 }
 
 function relogio() {
