@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contador.css" />
+
+    <title>Contador</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contador</h1>
+    </header>
+
+    <section>
+      <div>
+        <p>
+          Inicio:
+          <input type="number" name="txtinit" id="txtinit" />
+        </p>
+        <p>
+          Fim:
+          <input type="number" name="txtend" id="txtend" />
+        </p>
+
+        <p>
+          Passo:
+          <input type="number" name="txtcnt" id="txtcnt" />
+        </p>
+        <input type="button" value="Contar" onclick='contar()' id='contar'/>
+      </div>
+      <div id='res'>Preparando a Contagem...</div>
+    </section>
+
+    <script src="contador.js"></script>
+
+    <footer>
+      <p>&copy;JeostonJúnior</p>
+    </footer>
+  </body>
+</html>

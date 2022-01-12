@@ -1,0 +1,55 @@
+body{
+    background: rgba(107, 18, 208, 0.981);
+    color: white;
+    font: normal 12pt Arial;
+}
+
+header{
+    text-align: center;
+}
+
+
+section{
+    display: block;
+    background: white;
+    color: black;
+    width:550px;
+    margin: auto;
+    padding:15px;
+    border-radius: 20px;
+
+}
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
+#contar{
+    padding: 5px;
+    display: block;
+    margin: auto;
+    background:orange;
+    border-color: orange;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.638);
+}
+
+input#txtinit, input#txtend, input#txtcnt{
+    box-shadow: 3px 1px orange;
+    color: orange;
+    border-color:orange;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance:none;
+  margin: 0;
+}
+
+#res{
+    display: block;
+    margin-top:15px;
+    text-align: center;
+}
