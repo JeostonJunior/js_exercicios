@@ -9,15 +9,26 @@ function contar() {
     fim.value.length == 0 ||
     passo.value.length == 0
   ) {
-    window.alert("Faltam dados");
+    res.innerHTML = "Impossivel contar";
   } else {
-    res.innerHTML = "Contando => ";
+    res.innerHTML = "Contando: <br>";
     var i = Number(inicio.value);
     var f = Number(fim.value);
     var p = Number(passo.value);
 
-    for (var c = i; c <= f; c += p) {
-      res.innerHTML += `${c} \u{1F4A8}`;
+    if (p <= 0) {
+      window.alert("Passo inválido! Considerando Passo 1");
+      p = 1;
     }
+    if (i < f) {
+      for (var c = i; c <= f; c += p) {
+        res.innerHTML += `${c} \u{1F4A8}`;
+      }
+    } else {
+      for (var c = i; c >= f; c -= p) {
+        res.innerHTML += `${c} \u{1F4A8}`;
+      }
+    }
+    res.innerHTML += `\u{1F3C1}`;
   }
 }
