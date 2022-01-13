@@ -1,0 +1,49 @@
+body {
+  background: rgb(39, 96, 220);
+  font: normal 12pt arial;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  width: 500px;
+  background: white;
+  color: black;
+  height: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+
+select{
+    width:120px;
+    height:180px;
+    color: red;
+    background:rgb(230, 222, 222);
+    border:solid 2px black;
+}
+
+option {
+    padding:2.3px;
+}
+
+/*
+#tab {
+  font-size: 28px;
+  border: solid 1px black;
+  margin-top: 20px;
+  height:200px;
+  border-radius: 10px;
+  padding: 2px 50px;
+  color: #fff;
+  width:50px;
+}
+*/
